@@ -1,0 +1,37 @@
+{
+  "name": "vue-php",
+  "version": "1.0.0",
+  "description": "Easy routing and controller setup for small apps",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && cd public && php -S localhost:4242",
+    "build": "browserify -t vueify -e src/main.js -o public/build.js",
+    "watch": "watchify -t vueify -e src/main.js -o public/build.js"
+  },
+  "author": "Chris Hammock",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crshmk/vue-php.git"
+  },
+  "keywords": [
+    "rest",
+    "api",
+    "vue",
+    "php",
+    "axios"
+  ],
+  "bugs": {
+    "url": "https://github.com/crshmk/vue-php/issues"
+  },
+  "homepage": "https://github.com/crshmk/vue-php#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "vue": "^2.5.16",
+    "vue-router": "^3.0.1"
+  },
+  "devDependencies": {
+    "browserify": "^16.1.1",
+    "watchify": "^3.11.0"
+  }
+}
