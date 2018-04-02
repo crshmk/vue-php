@@ -180,3 +180,10 @@ The axios object is also set on the Vue instance as
 this.$axios()
 ```
 for use with other services.
+
+## Install
+To use the PHP server, just `npm install && npm start`. Open a Chrome window and, with the network tab open on the dev tools, head to localhost:4242 and view the requests from the created hook in `Home.vue`.
+
+Otherwise, `npm install && npm run build` and serve as you like.
+
+The included build setup is for Browserify. If you've only used webpack, `watchify` is Browserify's hot reloader. Just `npm run watch` to enable it.
