@@ -1,0 +1,7 @@
+*.DS_STORE
+.gitignore
+.npmignore
+dev.txt
+node_modules/
+public/build.js
+package-lock.json
